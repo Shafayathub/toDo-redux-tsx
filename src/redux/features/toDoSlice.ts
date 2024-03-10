@@ -1,12 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  serial: 1,
-  task: "",
-  status: false,
+  todos: [],
 };
 const toDoSlice = createSlice({
-  name: "toDo",
+  name: "todo",
   initialState,
   reducers: {},
 });
+
+export default toDoSlice.reducer;
